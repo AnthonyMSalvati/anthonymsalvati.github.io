@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="globe.png" />
+    <title>Post an Advertisement</title>
+    <style>
+        body 
+        {
+            background-image: url(hiring.JPG);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h4 {
+            color: aliceblue;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="house_offer.html"> House Someone Affected </a></li>
+        <li><a href="affected.html"> Reach out for Help</a></li>
+        <li><a href="job_search.html">Rebuilding Projects</a></li>
+        <li><a href="advertisement_form.html"> Advertise Jobs </a></li>
+    </ul>
+    <form style="color:black;font-size:30px;font-weight:bold;font-family:Georgia, 'Times New Roman', Times, serif" action="formData.php"  method="post">
+        Company Name: <br />
+        <input name="compName" type="text"/>
+        <br />
+        <br />
+        <br />
+        <label>Description:</label><br />
+
+        <textarea id="advertisementText"
+                  rows="4"
+                  cols="150"
+                  name="jobDesc"> Enter Job Description Here </textarea>
+        <br />
+        <br />
+        <p style="color:antiquewhite;font-size:20px;">Pay:<br />
+        <input type="text" name="payVal" /><br />
+        <input type="radio" name="payType" value="Per Job" />Per Job<br />
+        <input type="radio" name="payType" value="Per Hour" />Per Hour <br />
+        <input type="radio" name="payType" value="Per Day" />Per Day<br />
+        <input type="hidden" name="REDIRECT" value="index.html" />
+        <input type="submit" value="Submit" />
+        </p>
+    </form>
+  
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <p style=" color:white;font-size:12px;">*all submissions will be reviewed by faculty before being posted.</p> 
+</body>
+</html>
